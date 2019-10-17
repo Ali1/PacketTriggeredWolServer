@@ -1,0 +1,10 @@
+[Unit]
+Description=Packet Triggered Wol Server for Plex
+
+[Service]
+WorkingDirectory=/home/pi
+ExecStart=/home/pi/plextowol.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target 
