@@ -54,3 +54,6 @@ sudo cp Examples/Plex/plextowol.service /lib/systemd/system/
 sudo systemctl enable plextowol
 sudo systemctl start plextowol
 ```
+## FAQ
+### My ethernet connection is slow. Can I use wifi and ethernet
+On windows you can enable both and WOL should work. Make sure to prioritise your wifi connection to take advantage of the speed. https://www.windowscentral.com/how-change-priority-order-network-adapters-windows-10
