@@ -50,7 +50,9 @@ nano plextowol.sh # change mac address at the end of the command
 ```
 Now install the plextowolserver
 ```
-sudo cp Examples/Plex/plextowol.service /lib/systemd/system/
+sudo cp SniffToWol/Examples/Plex/plextowol.service 
+nano plextowol.service # change location twice if username is not pi
+sudo mv plextowol.service /lib/systemd/system/
 sudo systemctl enable plextowol
 sudo systemctl start plextowol
 ```
